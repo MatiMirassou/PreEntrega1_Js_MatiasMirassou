@@ -27,9 +27,9 @@ function totalItems() {
     const IMPUESTO = total * 0.01; // 1% de impuesto para el marketplace
     const COMISION = total * 0.02;     // 2% de comision para el artist
 
-    console.log("el subtotal de la compra es " + total);
-    console.log("Los impuestos del marketplace son " + IMPUESTO);
-    console.log("La comision para el artista es de " + COMISION)
+    console.log("el subtotal de la compra es " + total + "$.");
+    console.log("Los impuestos del marketplace son " + IMPUESTO + "$.");
+    console.log("La comision para el artista es de " + COMISION + "$.")
 
     return (total + IMPUESTO + COMISION).toFixed(2);
 }
@@ -37,7 +37,7 @@ function totalItems() {
 
 const TOTALMASIMPUESTOS = totalItems();
 
-if (OTALMASIMPUESTOS !== null && !isNaN(TOTALMASIMPUESTOS)){
+if (TOTALMASIMPUESTOS !== null && !isNaN(TOTALMASIMPUESTOS)){
     alert("¡Felicitaciones! El total de su compra (más impuestos) es: " + TOTALMASIMPUESTOS + "$.");
     console.log("El total de su compra es: " + TOTALMASIMPUESTOS);
 } else {
