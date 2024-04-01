@@ -38,7 +38,7 @@ function totalItems() {
 const TOTAL = totalItems();
 
 if (TOTAL !== null && !isNaN(TOTAL)){
-    alert("¡Felicitaciones! El total de su compra es: " + TOTAL + "$.");
+    alert("¡Felicitaciones! El total de su compra (más impuestos) es: " + TOTAL + "$.");
     console.log("El total de su compra es: " + TOTAL);
 } else {
     alert("Advertencia: Ingrese solamente 'si' o 'no'. Presione F5 para volver a empezar.");
